@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ItemsSpawner : MonoBehaviour
+public class ItemSpawner : MonoBehaviour
 {
     public GameObject spawn;
     float nextSpawn = 1f;

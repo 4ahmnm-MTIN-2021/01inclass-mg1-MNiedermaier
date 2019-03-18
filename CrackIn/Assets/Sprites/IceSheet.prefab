@@ -740,7 +740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224363802890112986}
   m_Layer: 5
-  m_Name: 'Ice '
+  m_Name: IceSheet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
