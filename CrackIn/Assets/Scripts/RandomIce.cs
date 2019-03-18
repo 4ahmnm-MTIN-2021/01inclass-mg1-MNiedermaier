@@ -5,9 +5,9 @@ using UnityEngine;
 public class RandomIce : MonoBehaviour
 {
 
-    private GameObject iceplattform;
-    private IcePlatform myPlattform;
-    public GameObject[] plattforms;
+    private GameObject iceplatform;
+    private IcePlatform myPlatform;
+    public GameObject[] platforms;
     float myTimer = 0;
     float deltaTime = 0;
 
@@ -51,12 +51,12 @@ public class RandomIce : MonoBehaviour
     {
         int x = getRandomNumber();
 
-        if (!plattforms[x].gameObject.GetComponent<CircleCollider2D>().enabled)
+        if (!platforms[x].gameObject.GetComponent<CircleCollider2D>().enabled)
         {
-            myPlattform = plattforms[x].gameObject.GetComponent<IcePlatform>();
+            myPlatform = platforms[x].gameObject.GetComponent<IcePlatform>();
             Debug.Log("hallo2");
-            myPlattform.setLayerInactive();
-            myPlattform.setColliderActive();
+            myPlatform.setLayerInactive();
+            myPlatform.setColliderActive();
         }
         else
         {

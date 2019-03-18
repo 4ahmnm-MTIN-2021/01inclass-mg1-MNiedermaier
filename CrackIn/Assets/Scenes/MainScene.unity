@@ -1023,7 +1023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1ee37449cb2475f8f344aa054bedbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plattforms:
+  platforms:
   - {fileID: 27860167}
   - {fileID: 1332646303}
   - {fileID: 583668596}
