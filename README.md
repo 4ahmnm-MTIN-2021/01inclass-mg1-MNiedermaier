@@ -5,13 +5,13 @@
 
 *Screenshots
 
--Concept
+- Concept
 ![Concept](./Screenshot/Concept.jpeg)
--Start
+- Start
 ![Start](./Screenshot/Start.jpeg)
--GamePlay
+- GamePlay
 ![GamePlay](./Screenshot/GamePlay.jpeg)
--GameOver
+- GameOver
 ![GameOver](./Screenshot/GameOver.jpeg)
 
 *Runtime Version: .NET 3.5 Equivalent
@@ -30,18 +30,18 @@ Pc Standalone (1024x768)
 
 *Scripts
 
--StopWatch by Valerian Tschopp
--ItemsSpawner & Random Snowball by Clea Eliasch
--Fish & GameLogic by Sarah Glavan
+- StopWatch by Valerian Tschopp
+- ItemsSpawner & Random Snowball by Clea Eliasch
+- Fish & GameLogic by Sarah Glavan
 
 
 *Progress 95% done
 
--User Interface
--Add Stopwatch
--Add Counter
--Player interaction with world
--Ranom functions 
+- User Interface
+- Add Stopwatch
+- Add Counter
+- Player interaction with world
+- Ranom functions 
 
 
 *Lessons Learned
