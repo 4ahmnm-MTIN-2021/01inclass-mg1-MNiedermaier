@@ -15,8 +15,10 @@ public class GameLogic : MonoBehaviour
     }
 
     void Update()
+
     {
         coinNumber.text = coinAmount.ToString();
+        Debug.Log("Gamelogic!=null");
     }
 
     public void AddCoin()

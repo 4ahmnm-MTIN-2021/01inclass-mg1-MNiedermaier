@@ -7,17 +7,6 @@ public class SceneLoader : MonoBehaviour
 {
     enum Scenes { StartScene, MainScene, GameOverScene };
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public void LoadStartScene()
     {
         SceneManager.LoadScene((int)Scenes.StartScene);

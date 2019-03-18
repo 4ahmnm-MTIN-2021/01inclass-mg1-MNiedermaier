@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+
 
 public class Player : MonoBehaviour
 {
@@ -9,7 +11,15 @@ public class Player : MonoBehaviour
     //configruation parameters
     public float moveSpeed = 5.0f;
     public float xMin = 3.0f, xMax = 5.0f;
+    public float posZ = 1;
+    float timer = 0;
 
+    public Text collected;
+
+    private const string TAGPLAYER = "Player";
+    private const string TAGGROUND = "Water";
+
+    public SceneLoader sceneLoader;
     // Use this for initialization
     void Start()
     {
@@ -19,16 +29,34 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+        timer += Time.deltaTime;
+        Debug.Log("timer"+timer);
     }
 
     private void Move()
     {
         var deltaX = Input.GetAxis(AXISHORIZONTAL) * Time.deltaTime * moveSpeed;
         var newPosX = Mathf.Clamp(transform.position.x + deltaX, xMin, xMax);
+        posZ = posZ * timer;
 
-        transform.position = new Vector2(newPosX, transform.position.y);
+        transform.position = new Vector3(newPosX, transform.position.y, timer);
+
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(" hallo "+collision.tag+ " gameObject " +gameObject.tag);
+        if (collision.tag == "Water" && gameObject.tag == "Player")
+        {
+
+            sceneLoader.LoadGameOverScene();
+        }
+
+    }
+
 }
+
+
+
 
 
 /* using UnityEngine;

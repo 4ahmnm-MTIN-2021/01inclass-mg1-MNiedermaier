@@ -23,10 +23,6 @@ public class Fish : MonoBehaviour
                 Destroy(this.gameObject);
                 Debug.Log("Gamelogic!=null");
             }
-            else
-            {
-                Debug.Log("Gamelogic=null");
-            }
 
             Debug.Log("playercollision");
         }
