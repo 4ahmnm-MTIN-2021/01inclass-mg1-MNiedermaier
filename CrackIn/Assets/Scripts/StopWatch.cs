@@ -1,11 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class StopWatch : MonoBehaviour
 {
-
     private Text watch;
     private float timer;
     private int interval = 10;
@@ -26,6 +23,7 @@ public class StopWatch : MonoBehaviour
             Mathf.Floor(timer / 60),
             Mathf.Floor(timer) % 60,
             Mathf.Floor((timer * 100) % 100));
+
         if (timer > interval)
         {
             GlobalVariables.speed = GlobalVariables.speed + 1f;

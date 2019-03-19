@@ -1,14 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class IcePlatform : MonoBehaviour {
-    private CircleCollider2D myCollider;
-    private SpriteRenderer myLayer;
+   private CircleCollider2D myCollider;
+   private SpriteRenderer myLayer;
 
 	void Start () {
         myCollider = GetComponent<CircleCollider2D>();
         myLayer = GetComponent<SpriteRenderer>();
+
         setColliderInactive();
         setLayerActive();
 	}
@@ -32,8 +31,4 @@ public void setLayerInactive()
     {
         myLayer.enabled = false;
     }
-
-    void Update () {
-		
-	}
 }

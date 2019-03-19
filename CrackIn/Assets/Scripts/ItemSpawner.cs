@@ -10,19 +10,16 @@ public class ItemSpawner : MonoBehaviour
     float randY;
     float timer;
 
-
     // Update is called once per frame
     void Update()
     {
         SpawnFish();
-
     }
 
     private void SpawnFish()
     {
         timer = timer + Time.deltaTime;
         // timer += Time.deltaTime
-
 
         if (timer > spawnRateGood)
         {

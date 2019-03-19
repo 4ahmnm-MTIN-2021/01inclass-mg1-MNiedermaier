@@ -443,7 +443,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &209028537 stripped
 GameObject:
@@ -1445,7 +1445,7 @@ Transform:
   m_LocalScale: {x: 0.42014, y: 0.42014, z: 0.42014}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &851932053
 GameObject:
@@ -1571,7 +1571,6 @@ MonoBehaviour:
   moveSpeed: 3
   xMin: -5.5
   xMax: 5.5
-  posZ: 1
   collected: {fileID: 0}
   sceneLoader: {fileID: 1048951374}
 --- !u!58 &851932059

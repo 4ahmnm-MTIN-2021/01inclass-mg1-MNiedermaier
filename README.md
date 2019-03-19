@@ -28,6 +28,10 @@
 
 - Pc Standalone (1024x768)
 
+*Control
+
+- Cursor (mouse) for menu, keyboard keys A and D to move the player left and right.
+
 
 *Scripts
 
@@ -42,7 +46,13 @@
 - Add Stopwatch
 - Add Counter
 - Player interaction with world
-- Ranom functions 
+- Random functions 
+
+*Limitation
+
+- This Game is very simple.
+- The Illustrations are very cute.
+- The view is unique.
 
 
 *Lessons Learned

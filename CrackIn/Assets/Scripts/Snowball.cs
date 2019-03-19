@@ -13,14 +13,12 @@ public class Snowball: MonoBehaviour
     void Update()
     {
         SpawnBall();
-
     }
 
     private void SpawnBall()
     {
         timer = timer + Time.deltaTime;
         // timer += Time.deltaTime
-
 
         if (timer > spawnRateBall)
         {

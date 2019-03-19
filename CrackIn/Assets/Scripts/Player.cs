@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
 
 
@@ -11,7 +10,6 @@ public class Player : MonoBehaviour
     //configruation parameters
     public float moveSpeed = 5.0f;
     public float xMin = 3.0f, xMax = 5.0f;
-    public float posZ = 1;
     float timer = 0;
 
     public Text collected;
@@ -25,7 +23,7 @@ public class Player : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>(); //Get and store a reference to the Rigidbody2D component so that we can access it.
     }
-    // Update is called once per frame
+
     void Update()
     {
         Move();
@@ -36,9 +34,8 @@ public class Player : MonoBehaviour
     {
         var deltaX = Input.GetAxis(AXISHORIZONTAL) * Time.deltaTime * moveSpeed;
         var newPosX = Mathf.Clamp(transform.position.x + deltaX, xMin, xMax);
-        posZ = posZ * timer;
 
-        transform.position = new Vector3(newPosX, transform.position.y, timer);
+        transform.position = new Vector2(newPosX, transform.position.y);
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -46,11 +43,7 @@ public class Player : MonoBehaviour
 
         if (collision.tag == "Water" && gameObject.tag == "Player")
         {
-           // Debug.Log(" hallo " + collision.tag + " gameObject " + gameObject.tag);
-
            sceneLoader.LoadGameOverScene();
-
-            Debug.Log("gameover");
         }
 
     }

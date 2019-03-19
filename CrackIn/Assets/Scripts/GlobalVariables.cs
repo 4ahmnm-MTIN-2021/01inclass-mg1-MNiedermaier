@@ -3,5 +3,4 @@
     public static float speed = 2f;
     public static bool collisionTop = false;
     public static bool collisionBottom = false;
-    public static bool newHighscore = false;
 }

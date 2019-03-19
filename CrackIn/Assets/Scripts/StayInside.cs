@@ -2,7 +2,6 @@
 
 public class StayInside : MonoBehaviour
 {
-
     void Update()
     {
         transform.position = new Vector3(Mathf.Clamp(transform.position.x,-8f, 8f),
